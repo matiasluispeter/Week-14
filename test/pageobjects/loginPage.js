@@ -12,6 +12,11 @@ class LoginPage {
         return $('#login-button');
     }
 
+
+    get errorAlert() {
+        return $('#login_button_container > div > form > div.error-message-container.error > h3');
+    }
+
     async login(username, password) {
         await this.inputUserName.setValue(username);
         await this.inputPassword.setValue(password);

@@ -27,7 +27,9 @@ export const config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        //'./test/specs/buyProduct.js',
+        //'./test/specs/logIn.e2e.js',
+        //'./test/specs/loginError.js'
     ],
     //
     // ============

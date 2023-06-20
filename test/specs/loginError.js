@@ -1,4 +1,4 @@
-import LoginPage from '../pageobjects/login.page.js';
+import LoginPage from '../pageobjects/loginPage.js';
 
 describe('My Login application', () => {
     beforeAll('browser', () => {
@@ -7,5 +7,9 @@ describe('My Login application', () => {
     it('Incorrect user', async () => {
         await expect(LoginPage.inputUserName).toBeDisplayed();
         await LoginPage.login('matias', 'secret_sauce');
+    });
+
+    it('Alert', async () => {
+        await expect(LoginPage.errorAlert).toBeDisplayed();
     });
 });

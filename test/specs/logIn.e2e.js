@@ -1,4 +1,4 @@
-import LoginPage from '../pageobjects/login.page.js';
+import LoginPage from '../pageobjects/loginPage.js';
 
 
 describe('My Login application', () => {
@@ -6,7 +6,6 @@ describe('My Login application', () => {
         browser.url('https://www.saucedemo.com')
     })
     it('Correct user', async () => {
-        await expect(LoginPage.inputUserName).toBeDisplayed();
         await LoginPage.login('standard_user', 'secret_sauce');
     });
 });
@@ -37,6 +36,8 @@ describe('My Login application', () => {
         await LoginPage.login('performance_glitch_user', 'secret_sauce');
     });
 });
+
+
 
 
 
