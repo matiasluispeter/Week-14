@@ -63,7 +63,6 @@ describe('Buy a product', () => {
         await expect(homePage.backToProducts).toBeDisplayed();
         await homePage.backToProductsClick();
     });
-
 });
 
 

@@ -61,12 +61,25 @@ class homePage {
         return $('#logout_sidebar_link')
     }
 
+    get btnAbout() {
+        return $('#about_sidebar_link')
+    }
+
+    get dogImg() {
+        return $('#item_4_img_link > img')
+    }
+
     async btnAddtoCartBackPackClick() {
         await this.btnAddtoCartBackPack.click();
     }
 
     async btnShoppingClick() {
         await this.btnShopping.click();
+    }
+
+
+    async btnAboutClick() {
+        await this.btnAbout.click();
     }
 
     async btnCheckOutClick() {
